@@ -123,7 +123,7 @@ void playerJet::enemyAtack(){
 	enemyAttackRoll = diceRollD100();
 	std::cout << "The enemy rolled a " << enemyAttackRoll << std::endl;
 	if (enemyAttackRoll <= enemyHitChance){
-	std::cout << "You went down like a little bitch to an obsolete plane with a crap missile." << std::endl << "Way to go costing the US tax payers millions of buckazoids!" << std::endl;
+	std::cout << "You go down in flames after evading the enemy's missile." << std::endl << "Way to go costing the US tax payers millions of buckazoids!" << std::endl;
 	playerDead = true;
 	}
 	else{
@@ -136,11 +136,11 @@ void deathCheck()
 {
 	if (enemyDead == true)
 	{
-    std::cout << "The Winrar is you" << std::endl;
+    std::cout << "You successfully enforced the no fly zone this day." << std::endl;
     }
 	if (playerDead == true)
 	{ 
-	std::cout << "Kenshiro and Tronne Bonne says Thanks for Playing" << std::endl;
+	std::cout << "Your death is brought up on sleezy new media outlets and they question the cost of the military flight programs." << std::endl;
 	}
 }
 // attack menu
@@ -198,7 +198,7 @@ void playerJet::chooseAttack()
 		enemyDead = true;
 	}
 	else{
-		std::cout << "You missed like a chump! (Hey!) like a chump! (Hey!) like a chump!"<< std::endl;
+		std::cout << "You missed your attack."<< std::endl;
 	}
 	}
 	
@@ -214,7 +214,7 @@ void playerJet::chooseAttack()
 		enemyDead = true;
 	}
 	else{
-		std::cout << "You missed like a chump! (Hey!) like a chump! (Hey!) like a chump!"<< std::endl;
+		std::cout << "You missed your attack."<< std::endl;
 	}
 	}
 	
@@ -230,7 +230,7 @@ void playerJet::chooseAttack()
 		enemyDead = true;
 	}
 	else{
-		std::cout << "You missed like a chump! (Hey!) like a chump! (Hey!) like a chump!"<< std::endl;
+		std::cout << "You missed your attack."<< std::endl;
 	}
 	}
 	
@@ -353,11 +353,11 @@ void playAgainDecision(){
    else if (finalchoice == 'n' || finalchoice == 'N')
 	{
 	   PlayAgainChoice = true;
-	   std::cout << "Kenshiro and Tronne Bonne says Thanks Again for Playing" << std::endl;
+	   std::cout << "Thanks Again for Playing" << std::endl;
    }
    else
    {
-	std::cout << "PICK Y or N FGT!" << std::endl;
+	std::cout << "Please type Y or N!" << std::endl;
 	playerDead = true;
 	enemyDead = true;
 	}
